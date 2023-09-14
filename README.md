@@ -1,4 +1,4 @@
-# PersonalBio
+# Caleb's Personal Biography
 
 Welcome to my personal biography webpage! This project showcases my journey, experiences, hobbies, and passions in an interactive and visually engaging format. Whether you're a potential employer, collaborator, or simply curious, this biography page offers insights into my life and contributions.
 

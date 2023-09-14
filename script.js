@@ -1,0 +1,1 @@
+// This is a JavaScript file for my personal biography webpage.

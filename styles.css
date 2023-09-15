@@ -1,27 +1,46 @@
 /* This is a CSS file for my personal biography webpage. */
 
-/* selector {
-    property1: value1;
-    property2: value2;
-} */
-
 * {
     margin: 0;
     padding: 0;
     outline: 0;
  }
 
+ p {
+    display: inline-block;
+    width: 100%;
+  }
+
  .container {
     max-width: 1200px; /* Adjust the maximum width as needed */
     margin: 0 auto; /* Center the container horizontally */
+    line-height: 1.5;
+    font-family: 'Architects Daughter', sans-serif;
+    font-size: 25px;
 }
 
  .navbar {
-    background-color: #D3D3D3;
-    color: #fff;
+    background-color: rgba(211, 211, 211, 0.9);
     padding: 10px 0;
     display: flex;
     align-items: center;
+}
+  
+  /* Styles for navbar links on hover */
+  .nav-item a:hover {
+    background-color: #333; /* Change the background color on hover */
+    color: #fff; /* Change the text color on hover */
+    border-radius: 30px; /* Add a slight border radius for a button-like effect */
+  }
+  
+  .nav-link {
+    padding: 20px;
+  }
+
+.sticky {
+    position: fixed;
+    max-width: 1200px; /* Adjust the maximum width as needed */
+    width: 100%
 }
 
  #caleb-logo {
@@ -33,9 +52,7 @@
 .nav-list {
     list-style: none;
     display: flex;
-    font-size: 20px;
-    font-family: 'Lato', sans-serif;
-    margin-left: 20%;
+    margin-left: 30%;
     flex-grow: 1; /* Allow the nav-list to grow and take available width */
     justify-content: space-between; /* Space items evenly within the available space */
 }
@@ -48,4 +65,565 @@
     text-decoration: none;
     color: #000000;
     font-weight: bold;
+}
+
+.intro-sect {
+    padding: 5%;
+    align-items: center; /* Vertical centering for this specific item */
+    background-image: url('assets/intro-bg-image.jpeg');
+    background-size: cover; /* Adjust to 'contain' or '100%' as needed */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repetition */
+}
+
+#caleb-profile-picture {
+    width: 216px; /* Set the desired width here */
+    height: auto; /* Let the height adjust proportionally */
+}
+
+.intro-div-1 {
+    display:flex;
+}
+
+.intro-text {
+    margin-left: 5%;
+    align-self: center; /* Vertical centering for this specific item */
+}
+
+.intro-text-2 {
+    margin-top: 5%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.edu-sect {
+    padding: 5%;
+    background-image: url('assets/edu-bg-image.jpeg');
+    background-size: cover; /* Adjust to 'contain' or '100%' as needed */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repetition */
+}
+
+.edu-div-1 {
+    display: flex; /* Use flexbox to control layout */
+    flex-direction: column; /* Stack children vertically */
+    text-align: center;
+    align-items: center; /* Vertical centering for this specific item */
+}
+
+.edu-title {
+    font-family: 'Gochi Hand', sans-serif;
+    font-size: 60px;
+    margin-bottom: 3%;
+}
+
+.yrs-active-text {
+    margin-bottom: 2%;
+    font-weight: bold;
+}
+
+#nlps-img {
+    width: 500px; /* Set the desired width here */
+    height: auto; /* Let the height adjust proportionally */
+    border: 10px solid #333; /* Example border style */
+}
+
+.footsteps-img {
+    width: 5%; /* Set the desired width here */
+    height: auto; /* Let the height adjust proportionally */
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+#aiss-img {
+    width: 500px; /* Set the desired width here */
+    height: auto; /* Let the height adjust proportionally */
+    border: 10px solid #333; /* Example border style */
+}
+
+#yjc-img {
+    width: 500px; /* Set the desired width here */
+    height: auto; /* Let the height adjust proportionally */
+    border: 10px solid #333; /* Example border style */
+}
+
+#ntu-img {
+    width: 500px; /* Set the desired width here */
+    height: auto; /* Let the height adjust proportionally */
+    margin-bottom: 3%;
+    border: 10px solid #333; /* Example border style */
+}
+
+.edu-text {
+    text-align: left;
+}
+
+#grad-ceremony {
+    width: 500px; /* Set the desired width here */
+    height: auto; /* Let the height adjust proportionally */
+    margin-top: 3%;
+    border: 20px solid #333; /* Example border style */
+}
+
+.ns-sect {
+    padding: 5%;
+    background-image: url('assets/ns-bg-image.jpg');
+    background-size: cover; /* Adjust to 'contain' or '100%' as needed */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repetition */
+}
+
+.ns-div-1 {
+    display: flex; /* Use flexbox to control layout */
+    flex-direction: column; /* Stack children vertically */
+    text-align: center;
+    align-items: center; /* Vertical centering for this specific item */
+}
+
+.ns-title {
+    font-family: 'Gochi Hand', sans-serif;
+    font-size: 60px;
+    margin-bottom: 3%;
+}
+
+.ns-text {
+    text-align: left;
+}
+
+.ns-div-2 {
+    display: flex; /* Use flexbox to control layout */
+    text-align: center;
+    align-items: center; /* Vertical centering for this specific item */
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+#sar21-img {
+    width: 250px; /* Set the desired width here */
+    height: auto; /* Let the height adjust proportionally */
+    margin-bottom: 3%;
+}
+
+#grenade-img {
+    width: 250px; /* Set the desired width here */
+    height: auto; /* Let the height adjust proportionally */
+    margin-bottom: 3%;
+}
+
+#excavator-img {
+    width: 250px; /* Set the desired width here */
+    height: auto; /* Let the height adjust proportionally */
+    margin-bottom: 3%;
+    margin-right: 10%;
+}
+
+#bulldozer-img {
+    width: 250px; /* Set the desired width here */
+    height: auto; /* Let the height adjust proportionally */
+    margin-bottom: 3%;
+}
+
+#ndp2017logo-img {
+    width: 500px; /* Set the desired width here */
+    height: auto; /* Let the height adjust proportionally */
+}
+
+.work-sect {
+    padding: 5%;
+    background-image: url('assets/work-bg-image.jpg');
+    background-size: cover; /* Adjust to 'contain' or '100%' as needed */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repetition */
+}
+
+.work-div-1 {
+    display: flex; /* Use flexbox to control layout */
+    flex-direction: column; /* Stack children vertically */
+    text-align: center;
+    align-items: center; /* Vertical centering for this specific item */
+}
+
+.work-title {
+    font-family: 'Gochi Hand', sans-serif;
+    font-size: 60px;
+    margin-bottom: 3%;
+}
+
+.work-text {
+    text-align: left;
+}
+
+.work-text-2 {
+    text-align: left;
+    margin-bottom: 3%;
+}
+
+.work-div-2 {
+    display: flex; /* Use flexbox to control layout */
+    text-align: center;
+    align-items: center; /* Vertical centering for this specific item */
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+#dbs-img {
+    width: 200px; /* Set the desired width here */
+    height: auto; /* Let the height adjust proportionally */
+    margin-bottom: 3%;
+}
+
+#avanade-img {
+    width: 250px; /* Set the desired width here */
+    height: auto; /* Let the height adjust proportionally */
+    margin-bottom: 3%;
+}
+
+.skills-sect {
+    padding: 5%;
+    background-image: url('assets/skills-bg-image.png');
+    background-size: cover; /* Adjust to 'contain' or '100%' as needed */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repetition */
+}
+
+.skills-div-1 {
+    display: flex; /* Use flexbox to control layout */
+    flex-direction: column; /* Stack children vertically */
+    text-align: center;
+    align-items: center; /* Vertical centering for this specific item */
+}
+
+.skills-title {
+    font-family: 'Gochi Hand', sans-serif;
+    font-size: 60px;
+    margin-bottom: 3%;
+}
+
+.skills-title-2 {
+    font-family: 'Gochi Hand', sans-serif;
+    font-size: 35px;
+    margin-bottom: 3%;
+    text-align: left;
+}
+
+.skills-title-3 {
+    font-family: 'Gochi Hand', sans-serif;
+    font-size: 40px;
+}
+
+.skills-div-2 {
+    display: flex;
+    width: 100%;
+    padding: 2%;
+    margin-bottom: 3%;
+    text-align: left; /* Override text alignment to left */
+    align-items: top; /* Vertical centering for this specific item */
+    line-height: 5; /* Adjust this value to increase or decrease line spacing */
+    flex-wrap: wrap;
+}
+
+.skills-div-3 {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    width: 200px;
+    padding: 2%;
+    margin-right: 2%;
+    text-align: center; /* Override text alignment to left */
+    align-items: center; /* Vertical centering for this specific item */
+    margin-bottom: 3%;
+}
+
+.skills-div-4 { /* For Code Quality and Security */
+    width: fit-content;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    padding: 2%;
+    text-align: center; /* Override text alignment to left */
+    align-items: center; /* Vertical centering for this specific item */
+    margin-bottom: 3%;
+}
+
+.skills-div-5 { /* For Code Quality and Security */
+    width: fit-content;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    padding: 2%;
+    text-align: center; /* Override text alignment to left */
+    align-items: center; /* Vertical centering for this specific item */
+}
+
+.skills-img {
+    width: auto; /* Set the desired width here */
+    height: 150px; /* Let the height adjust proportionally */
+    margin-bottom: 50px;
+}
+
+.details-button {
+    width: 200px;
+    background-color: #007BFF; /* Button background color */
+    color: #fff; /* Text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px; /* Increased border radius for a more curved look */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth color transition on hover */
+    /* Add hover effect */
+    &:hover {
+      background-color: #0056b3; /* Darker color on hover */
+    }
+  }
+
+.popup-container {
+    background-image: url('assets/ancient-paper-bg-image.jpeg');
+    background-size: cover; /* Adjust to 'contain' or '100%' as needed */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repetition */
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    max-width: 1200px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.close-button {
+    background-color: #f00; /* Red background */
+    border: none;
+    color: #fff; /* White color for the "X" symbol */
+    font-size: 24px; /* Adjust the font size as needed */
+    cursor: pointer;
+    position: absolute;
+    top: 10px; /* Adjust the top position as needed */
+    right: 10px; /* Adjust the right position as needed */
+    padding: 0;
+    width: 30px; /* Adjust the width as needed */
+    height: 30px; /* Adjust the height as needed */
+    border-radius: 50%; /* Makes the button circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s; /* Smooth color transition on hover */
+  }
+  
+  .close-button:hover {
+    background-color: #ff6666; /* Lighter red color on hover (you can choose your desired color) */
+  }
+ 
+.skills-text {
+    line-height: 2;
+}
+
+.goals-sect {
+    padding: 5%;
+    background-image: url('assets/goals-bg-image.jpg');
+    background-size: cover; /* Adjust to 'contain' or '100%' as needed */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repetition */
+}
+
+.goals-div-1 {
+    display: flex; /* Use flexbox to control layout */
+    flex-direction: column; /* Stack children vertically */
+    text-align: center;
+    align-items: center; /* Vertical centering for this specific item */
+}
+
+.goals-title {
+    font-family: 'Gochi Hand', sans-serif;
+    font-size: 60px;
+    margin-bottom: 3%;
+}
+
+.goals-text {
+    text-align: left;
+}
+
+.goals-div-2 {
+    width: fit-content;
+    display: flex; /* Use flexbox to control layout */
+    text-align: center;
+    align-items: center; /* Vertical centering for this specific item */
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+#angular-img {
+    width: 200px; /* Set the desired width here */
+    height: auto; /* Let the height adjust proportionally */
+}
+
+#react-img {
+    width: 200px; /* Set the desired width here */
+    height: auto; /* Let the height adjust proportionally */
+}
+
+#vue-img {
+    width: 200px; /* Set the desired width here */
+    height: auto; /* Let the height adjust proportionally */
+}
+
+.hobbies-sect {
+    padding: 5%;
+    background-image: url('assets/hobbies-bg-image.jpeg');
+    background-size: cover; /* Adjust to 'contain' or '100%' as needed */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repetition */
+}
+
+.hobbies-div-1 {
+    display: flex; /* Use flexbox to control layout */
+    flex-direction: column; /* Stack children vertically */
+    text-align: center;
+    align-items: center; /* Vertical centering for this specific item */
+}
+
+.hobbies-title {
+    font-family: 'Gochi Hand', sans-serif;
+    font-size: 60px;
+    margin-bottom: 3%;
+}
+
+.hobbies-title-2 {
+    font-family: 'Gochi Hand', sans-serif;
+    font-size: 60px;
+    margin-bottom: 5%;
+}
+
+.hobbies-text {
+    text-align: left;
+    margin-bottom: 5%;
+}
+
+/* Style the Swiper container */
+.my-swiper {
+    width: 60%;
+    height: 1000px;
+    padding: 0 20%; /* Add spacing around the carousel */
+}
+
+/* Style individual slide boxes */
+/* Set a fixed width and height for all swiper slides */
+.swiper-slide {
+    width: 100px; /* Adjust the width as needed */
+    height: 990px; /* Adjust the height as needed for a more vertical layout */
+    display: flex; /* Use flexbox to control the layout */
+    flex-direction: column; /* Stack content vertically within each slide */
+    justify-content: center; /* Vertically center the content */
+    align-items: center; /* Horizontally center the content */
+    background-color: #e0e0e0; /* Replace with your desired background color */
+    border-radius: 20px;
+}
+
+.hobbies-div-2 {
+    display: flex; /* Use flexbox to control layout */
+    flex-direction: column; /* Stack children vertically */
+    text-align: center;
+    align-items: center; /* Vertical centering for this specific item */
+    padding: 10%;
+}
+
+/* Optional: Center the text within each slide */
+.swiper-slide {
+    display: block;
+    margin-top: 10px;
+    overflow: auto;
+}
+
+/* Set a fixed size for the images inside the Swiper slides */
+.swiper-slide img {
+    width: 150px; /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
+    object-fit: cover; /* Maintain the aspect ratio and cover the container */
+    margin-bottom: 10%;
+}
+
+/* Style slide images */
+.box img {
+    max-width: 100%; /* Ensure images don't exceed their containers */
+}
+
+.slider-img {
+    width: 100px; /* Set the desired width */
+    height: 100px; /* Set the desired height */
+    object-fit: cover;
+    border-radius: 50%; /* This will make the image a perfect circle */
+}
+
+.portfolio-sect {
+    padding: 5%;
+    background-image: url('assets/portfolio-bg-image.png');
+    background-size: cover; /* Adjust to 'contain' or '100%' as needed */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repetition */
+}
+
+.portfolio-div-1 {
+    display: flex; /* Use flexbox to control layout */
+    flex-direction: column; /* Stack children vertically */
+    text-align: center;
+    align-items: center; /* Vertical centering for this specific item */
+}
+
+.portfolio-title {
+    font-family: 'Gochi Hand', sans-serif;
+    font-size: 60px;
+    margin-bottom: 3%;
+}
+
+.portfolio-text {
+    text-align: left;
+    margin-bottom: 10%;
+}
+
+.table {
+    display: table;
+    width: 100%;
+    border-collapse: collapse; /* Optional for cell spacing */
+    margin-bottom: 10%;
+}
+  
+.table-row {
+    display: table-row;
+}
+  
+.table-cell {
+    display: table-cell;
+    border: 2px solid #000000; /* Optional for cell borders */
+    padding: 8px;
+}
+
+.contact-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.contact-icon {
+    margin: 0 10px;
+}
+
+.contact-icon-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.contact-info {
+    font-size: 20px;
+}
+
+.contact-text {
+    margin-bottom: 2%;
 }

@@ -11,7 +11,7 @@
     width: 100%;
   }
 
- .container {
+.container {
     max-width: 1200px; /* Adjust the maximum width as needed */
     margin: 0 auto; /* Center the container horizontally */
     line-height: 1.5;
@@ -19,33 +19,43 @@
     font-size: 25px;
 }
 
- .navbar {
+.container img {
+    /* Set a maximum width for images inside the container */
+    max-width: 100%;
+    /* Automatically adjust height to maintain aspect ratio */
+    height: auto;
+}
+
+.navbar {
     background-color: rgba(211, 211, 211, 0.9);
     padding: 10px 0;
     display: flex;
     align-items: center;
+    width: 100%;
+    box-sizing: border-box;
 }
   
-  /* Styles for navbar links on hover */
-  .nav-item a:hover {
+/* Styles for navbar links on hover */
+.nav-item a:hover {
     background-color: #333; /* Change the background color on hover */
     color: #fff; /* Change the text color on hover */
     border-radius: 30px; /* Add a slight border radius for a button-like effect */
   }
   
-  .nav-link {
-    padding: 20px;
+.nav-link {
+    padding: 5%;
   }
 
 .sticky {
     position: fixed;
     max-width: 1200px; /* Adjust the maximum width as needed */
-    width: 100%
+    width: 100%;
+    z-index: 100; /* Ensure it appears above other content */
 }
 
  #caleb-logo {
-    width: 70px;
-    height: 70px;
+    width: 10%;
+    height: auto;
     margin-left: 15%;
 }
 
@@ -67,22 +77,26 @@
     font-weight: bold;
 }
 
+.menu-icon {
+    display: none;
+}
+
 .intro-sect {
     padding: 5%;
     align-items: center; /* Vertical centering for this specific item */
-    background-image: url('assets/intro-bg-image.jpeg');
+    background-image: linear-gradient(#FFA384, #FDCB92);
     background-size: cover; /* Adjust to 'contain' or '100%' as needed */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent repetition */
 }
 
 #caleb-profile-picture {
-    width: 216px; /* Set the desired width here */
+    width: 20%; /* Make the image width 100% of its container */
     height: auto; /* Let the height adjust proportionally */
 }
 
 .intro-div-1 {
-    display:flex;
+    display: flex;
 }
 
 .intro-text {
@@ -99,10 +113,15 @@
 
 .edu-sect {
     padding: 5%;
-    background-image: url('assets/edu-bg-image.jpeg');
+    background-image: linear-gradient(#FDCB92, #F5E3A3);
     background-size: cover; /* Adjust to 'contain' or '100%' as needed */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent repetition */
+}
+
+.divider-img {
+    width: 100%; /* Set the desired width here */
+    height: auto; /* Let the height adjust proportionally */
 }
 
 .edu-div-1 {
@@ -168,7 +187,7 @@
 
 .ns-sect {
     padding: 5%;
-    background-image: url('assets/ns-bg-image.jpg');
+    background-image: linear-gradient(#F5E3A3, #D4F4B0);
     background-size: cover; /* Adjust to 'contain' or '100%' as needed */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent repetition */
@@ -215,7 +234,6 @@
     width: 250px; /* Set the desired width here */
     height: auto; /* Let the height adjust proportionally */
     margin-bottom: 3%;
-    margin-right: 10%;
 }
 
 #bulldozer-img {
@@ -229,9 +247,96 @@
     height: auto; /* Let the height adjust proportionally */
 }
 
+.hobbies-sect {
+    padding: 5%;
+    background-image: linear-gradient(#D4F4B0, #A2F4B0);
+    background-size: cover; /* Adjust to 'contain' or '100%' as needed */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repetition */
+}
+
+.hobbies-div-1 {
+    display: flex; /* Use flexbox to control layout */
+    flex-direction: column; /* Stack children vertically */
+    text-align: center;
+    align-items: center; /* Vertical centering for this specific item */
+}
+
+.hobbies-title {
+    font-family: 'Gochi Hand', sans-serif;
+    font-size: 60px;
+    margin-bottom: 3%;
+}
+
+.hobbies-title-2 {
+    font-family: 'Gochi Hand', sans-serif;
+    font-size: 60px;
+    margin-bottom: 5%;
+}
+
+.hobbies-text {
+    text-align: left;
+    margin-bottom: 5%;
+}
+
+/* Style the Swiper container */
+.my-swiper {
+    width: 50%;
+    height: 1000px;
+    padding: 0 20%; /* Add spacing around the carousel */
+}
+
+/* Style individual slide boxes */
+/* Set a fixed width and height for all swiper slides */
+.swiper-slide {
+    width: 100px; /* Adjust the width as needed */
+    height: 990px; /* Adjust the height as needed for a more vertical layout */
+    display: flex; /* Use flexbox to control the layout */
+    flex-direction: column; /* Stack content vertically within each slide */
+    justify-content: center; /* Vertically center the content */
+    align-items: center; /* Horizontally center the content */
+    background-color: #e0e0e0; /* Replace with your desired background color */
+    border-radius: 20px;
+}
+
+.hobbies-div-2 {
+    display: flex; /* Use flexbox to control layout */
+    flex-direction: column; /* Stack children vertically */
+    text-align: center;
+    align-items: center; /* Vertical centering for this specific item */
+    padding: 10%;
+}
+
+/* Optional: Center the text within each slide */
+.swiper-slide {
+    display: block;
+    margin-top: 10px;
+    overflow: auto;
+}
+
+/* Set a fixed size for the images inside the Swiper slides */
+.swiper-slide img {
+    width: 150px; /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
+    object-fit: cover; /* Maintain the aspect ratio and cover the container */
+    margin-bottom: 10%;
+}
+
+/* Style slide images */
+.box img {
+    max-width: 100%; /* Ensure images don't exceed their containers */
+}
+
+.slider-img {
+    width: 100px; /* Set the desired width */
+    height: 100px; /* Set the desired height */
+    object-fit: cover;
+    border-radius: 50%; /* This will make the image a perfect circle */
+}
+
 .work-sect {
     padding: 5%;
-    background-image: url('assets/work-bg-image.jpg');
+    background-image: linear-gradient(#A2F4B0, #72D9C8);
     background-size: cover; /* Adjust to 'contain' or '100%' as needed */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent repetition */
@@ -281,7 +386,7 @@
 
 .skills-sect {
     padding: 5%;
-    background-image: url('assets/skills-bg-image.png');
+    background-image: linear-gradient(#72D9C8, #6AC0DE);
     background-size: cover; /* Adjust to 'contain' or '100%' as needed */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent repetition */
@@ -317,8 +422,8 @@
     width: 100%;
     padding: 2%;
     margin-bottom: 3%;
-    text-align: left; /* Override text alignment to left */
-    align-items: top; /* Vertical centering for this specific item */
+    text-align: center; /* Override text alignment to left */
+    align-items: baseline; /* Vertical centering for this specific item */
     line-height: 5; /* Adjust this value to increase or decrease line spacing */
     flex-wrap: wrap;
 }
@@ -353,9 +458,9 @@
     align-items: center; /* Vertical centering for this specific item */
 }
 
-.skills-img {
+.skills-div-1 .skills-img {
     width: auto; /* Set the desired width here */
-    height: 150px; /* Let the height adjust proportionally */
+    height: 100px; /* Let the height adjust proportionally */
     margin-bottom: 50px;
 }
 
@@ -422,7 +527,7 @@
 
 .goals-sect {
     padding: 5%;
-    background-image: url('assets/goals-bg-image.jpg');
+    background-image: linear-gradient(#6AC0DE, #7794F1);
     background-size: cover; /* Adjust to 'contain' or '100%' as needed */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent repetition */
@@ -469,96 +574,9 @@
     height: auto; /* Let the height adjust proportionally */
 }
 
-.hobbies-sect {
-    padding: 5%;
-    background-image: url('assets/hobbies-bg-image.jpeg');
-    background-size: cover; /* Adjust to 'contain' or '100%' as needed */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent repetition */
-}
-
-.hobbies-div-1 {
-    display: flex; /* Use flexbox to control layout */
-    flex-direction: column; /* Stack children vertically */
-    text-align: center;
-    align-items: center; /* Vertical centering for this specific item */
-}
-
-.hobbies-title {
-    font-family: 'Gochi Hand', sans-serif;
-    font-size: 60px;
-    margin-bottom: 3%;
-}
-
-.hobbies-title-2 {
-    font-family: 'Gochi Hand', sans-serif;
-    font-size: 60px;
-    margin-bottom: 5%;
-}
-
-.hobbies-text {
-    text-align: left;
-    margin-bottom: 5%;
-}
-
-/* Style the Swiper container */
-.my-swiper {
-    width: 60%;
-    height: 1000px;
-    padding: 0 20%; /* Add spacing around the carousel */
-}
-
-/* Style individual slide boxes */
-/* Set a fixed width and height for all swiper slides */
-.swiper-slide {
-    width: 100px; /* Adjust the width as needed */
-    height: 990px; /* Adjust the height as needed for a more vertical layout */
-    display: flex; /* Use flexbox to control the layout */
-    flex-direction: column; /* Stack content vertically within each slide */
-    justify-content: center; /* Vertically center the content */
-    align-items: center; /* Horizontally center the content */
-    background-color: #e0e0e0; /* Replace with your desired background color */
-    border-radius: 20px;
-}
-
-.hobbies-div-2 {
-    display: flex; /* Use flexbox to control layout */
-    flex-direction: column; /* Stack children vertically */
-    text-align: center;
-    align-items: center; /* Vertical centering for this specific item */
-    padding: 10%;
-}
-
-/* Optional: Center the text within each slide */
-.swiper-slide {
-    display: block;
-    margin-top: 10px;
-    overflow: auto;
-}
-
-/* Set a fixed size for the images inside the Swiper slides */
-.swiper-slide img {
-    width: 150px; /* Adjust the width as needed */
-    height: 150px; /* Adjust the height as needed */
-    object-fit: cover; /* Maintain the aspect ratio and cover the container */
-    margin-bottom: 10%;
-}
-
-/* Style slide images */
-.box img {
-    max-width: 100%; /* Ensure images don't exceed their containers */
-}
-
-.slider-img {
-    width: 100px; /* Set the desired width */
-    height: 100px; /* Set the desired height */
-    object-fit: cover;
-    border-radius: 50%; /* This will make the image a perfect circle */
-}
-
 .portfolio-sect {
     padding: 5%;
-    background-image: url('assets/portfolio-bg-image.png');
+    background-image: linear-gradient(#7794F1, #8A6CF1);
     background-size: cover; /* Adjust to 'contain' or '100%' as needed */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent repetition */
@@ -597,6 +615,8 @@
     display: table-cell;
     border: 2px solid #000000; /* Optional for cell borders */
     padding: 8px;
+    vertical-align: middle; /* Center vertically */
+    text-align: center; /* Center horizontally */
 }
 
 .contact-footer {
@@ -626,4 +646,515 @@
 
 .contact-text {
     margin-bottom: 2%;
+}
+
+/* ---------------------------- Media Queries ---------------------------- */
+@media (max-width: 767px) {
+    .navbar {
+        position: relative;
+    }
+
+    .sticky {
+        position: sticky;
+        top: 0; /* Stick to the top of the viewport */
+        max-width: 1200px; /* Adjust the maximum width as needed */
+        width: 100%;
+        z-index: 100; /* Ensure it appears above other content */
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .nav-list.active {
+        display: block; /* Show the menu when the active class is present */
+        position: absolute;
+        top: 100%;
+        background-color: #fff; /* Background color for the menu */
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for a card-like effect */
+        z-index: 1; /* Ensure the menu appears above other content */
+        width: 100%; /* Make it full width */
+        margin-left: 0;
+    }
+
+    .nav-item {
+        align-content: center;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .nav-item:last-child {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .nav-link {
+        padding: 0.5%;
+    }
+
+    .menu-icon {
+        background: none;
+        border: none;
+        font-size: 150%; /* Adjust the font size as needed */
+        cursor: pointer;
+        margin-left: 3%;
+        padding: 1%;
+        display: block;
+        background-color: 0.3s; /* Add a smooth color transition on hover */
+    }
+
+    /* Add a highlight color on hover */
+    .menu-icon:hover {
+        background-color: #f0f0f0; /* Change the background color to your desired highlight color */
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
+    .my-swiper {
+        width: 40%;
+    }
+
+    .hobbies-title-2 {
+        font-size: 40px;
+    }
+
+    .hobbies-text {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        font-size: 20px;
+    }
+
+    .intro-text-2 {
+        font-size: 25px;
+    }
+
+    .edu-title {
+        font-size: 50px;
+    }
+
+    .ns-title {
+        font-size: 50px;
+    }
+
+    #sar21-img {
+        width: 200px;
+    }
+
+    #grenade-img {
+        width: 200px;
+    }
+
+    #excavator-img {
+        width: 200px;
+    }
+
+    #bulldozer-img {
+        width: 200px;
+    }
+
+    #ndp2017logo-img {
+        width: 400px;
+    }
+
+    .hobbies-title {
+        font-size: 30px;
+    }
+
+    .hobbies-title-2 {
+        font-size: 30px;
+    }
+
+    .my-swiper {
+        height: 800px;
+    }
+    
+    /* Style individual slide boxes */
+    /* Set a fixed width and height for all swiper slides */
+    .swiper-slide {
+        width: 100px; /* Adjust the width as needed */
+        height: 790px; /* Adjust the height as needed for a more vertical layout */
+    }
+
+    .swiper-slide img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .hobbies-text {
+        font-size: 17px;
+    }
+
+    .work-title {
+        font-size: 50px;
+    }
+
+    #dbs-img {
+        width: 200px;
+    }
+
+    #avanade-img {
+        width: 200px;
+    }
+
+    .skills-title {
+        font-size: 50px;
+    }
+
+    .skills-title-2 {
+        font-size: 29.16px;
+        text-align: center;
+    }
+
+    .skills-title-3 {
+        font-size: 33.33px;
+    }
+
+    .skills-div-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-div-3 .skills-img,
+    .skills-div-4 .skills-img,
+    .skills-div-5 .skills-img {
+        height: 83.34px;
+        margin-bottom: 40px;
+    }
+
+    .details-button {
+        width: 166.66px;
+        margin-bottom: 40px;
+    }
+
+    .goals-title {
+        font-size: 50px;
+    }
+
+    #angular-img {
+        width: 200px;
+    }
+
+    #react-img {
+        width: 200px;
+    }
+
+    #vue-img {
+        width: 200px;
+    }
+
+    .portfolio-title {
+        font-size: 50px;
+    }
+
+    .contact-icon-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .contact-info {
+        font-size: 16.66px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .container {
+        font-size: 15px;
+    }
+
+    .intro-text-2 {
+        font-size: 20px;
+    }
+
+    .intro-div-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #caleb-profile-picture {
+        width: 35%; /* Make the image width 100% of its container */
+        height: auto; /* Let the height adjust proportionally */
+        margin-bottom: 5%;
+    }
+
+    .edu-title {
+        font-size: 40px;
+    }
+
+    .ns-title {
+        font-size: 40px;
+    }
+
+    #sar21-img {
+        width: 150px;
+    }
+
+    #grenade-img {
+        width: 150px;
+    }
+
+    #excavator-img {
+        width: 150px;
+    }
+
+    #bulldozer-img {
+        width: 150px;
+    }
+
+    #ndp2017logo-img {
+        width: 300px;
+    }
+
+    .hobbies-title {
+        font-size: 40px;
+    }
+
+    .hobbies-title-2 {
+        font-size: 20px;
+    }
+
+    .my-swiper {
+        height: 600px;
+    }
+    
+    /* Style individual slide boxes */
+    /* Set a fixed width and height for all swiper slides */
+    .swiper-slide {
+        width: 100px; /* Adjust the width as needed */
+        height: 590px; /* Adjust the height as needed for a more vertical layout */
+    }
+
+    .swiper-slide img {
+        width: 85px;
+        height: 85px;
+    }
+
+    .hobbies-text {
+        font-size: 13.5px;
+    }
+
+    .work-title {
+        font-size: 40px;
+    }
+
+    #dbs-img {
+        width: 150px;
+    }
+
+    #avanade-img {
+        width: 150px;
+    }
+
+    .skills-title {
+        font-size: 40px;
+    }
+
+    .skills-title-2 {
+        font-size: 23.33px;
+        text-align: center;
+    }
+
+    
+    .skills-title-3 {
+        font-size: 26.67px;
+    }
+
+    .skills-div-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-div-3 .skills-img,
+    .skills-div-4 .skills-img,
+    .skills-div-5 .skills-img {
+        height: 66.67px;
+        margin-bottom: 30px;
+    }
+
+    .details-button {
+        width: 133.33px;
+        margin-bottom: 30px;
+    }
+
+    .goals-title {
+        font-size: 40px;
+    }
+
+    #angular-img {
+        width: 150px;
+    }
+
+    #react-img {
+        width: 150px;
+    }
+
+    #vue-img {
+        width: 150px;
+    }
+
+    .portfolio-title {
+        font-size: 40px;
+    }
+
+    .contact-icon-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .contact-info {
+        font-size: 13.33px;
+    }
+}
+
+@media (max-width: 479px) {
+    .container {
+        font-size: 10px;
+    }
+
+    .intro-text-2 {
+        font-size: 15px;
+    }
+
+    .intro-div-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #caleb-profile-picture {
+        width: 35%; /* Make the image width 100% of its container */
+        height: auto; /* Let the height adjust proportionally */
+        margin-bottom: 5%;
+    }
+
+    .edu-title {
+        font-size: 30px;
+    }
+
+    .ns-title {
+        font-size: 30px;
+    }
+
+    #sar21-img {
+        width: 100px;
+    }
+
+    #grenade-img {
+        width: 100px;
+    }
+
+    #excavator-img {
+        width: 100px;
+    }
+
+    #bulldozer-img {
+        width: 100px;
+    }
+
+    #ndp2017logo-img {
+        width: 200px;
+    }
+
+    .hobbies-title {
+        font-size: 30px;
+    }
+
+    .hobbies-title-2 {
+        font-size: 10px;
+    }
+
+    .my-swiper {
+        height: 400px;
+    }
+    
+    /* Style individual slide boxes */
+    /* Set a fixed width and height for all swiper slides */
+    .swiper-slide {
+        width: 100px; /* Adjust the width as needed */
+        height: 390px; /* Adjust the height as needed for a more vertical layout */
+    }
+
+    .swiper-slide img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .hobbies-text {
+        font-size: 10px;
+    }
+
+    .work-title {
+        font-size: 30px;
+    }
+
+    #dbs-img {
+        width: 100px;
+    }
+
+    #avanade-img {
+        width: 100px;
+    }
+
+    .skills-title {
+        font-size: 30px;
+    }
+
+    .skills-title-2 {
+        font-size: 17.5px;
+        text-align: center;
+    }
+
+    .skills-title-3 {
+        font-size: 20px;
+    }
+
+    .skills-div-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-div-3 .skills-img,
+    .skills-div-4 .skills-img,
+    .skills-div-5 .skills-img {
+        height: 50px;
+        margin-bottom: 20px;
+    }
+
+    .details-button {
+        width: 100px;
+        margin-bottom: 20px;
+    }
+
+    .goals-title {
+        font-size: 30px;
+    }
+
+    #angular-img {
+        width: 100px;
+    }
+
+    #react-img {
+        width: 100px;
+    }
+
+    #vue-img {
+        width: 100px;
+    }
+
+    .portfolio-title {
+        font-size: 30px;
+    }
+
+    .contact-icon-img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .contact-info {
+        font-size: 10px;
+    }
 }

@@ -1,9 +1,4 @@
 // This is a JavaScript file for my personal biography webpage.
-function closePopup(popupId) {
-    var targetContainer = document.getElementById(popupId);
-    targetContainer.style.display = "none"; // Hide the clicked popup container
-}
-
 let mySwiper = new Swiper('.container-2', {
     effect: 'coverflow',
     grabCursor: true,
@@ -27,6 +22,8 @@ let mySwiper = new Swiper('.container-2', {
 const nav = document.querySelector('.navbar')
 const about = document.querySelector('.intro-div-2')
 const navHeight = nav.getBoundingClientRect().height;
+const navList = document.querySelector(".nav-list");
+const menuToggle = document.getElementById("menu-toggle");
 
 document.querySelectorAll('.nav-link').forEach(function(el) {
     el.addEventListener('click', function(e) {
@@ -43,6 +40,7 @@ document.querySelectorAll('.nav-link').forEach(function(el) {
                 behavior: 'smooth',
             });
         }
+        navList.classList.toggle("active");
     });
 });
 
@@ -51,6 +49,7 @@ const stickyNav = function (entries) {
 
     if (!entry.isIntersecting) {
         nav.classList.add('sticky');
+        navList.classList.remove("active");
     } else {
         nav.classList.remove('sticky');
     }
@@ -66,6 +65,10 @@ const headerObserver = new IntersectionObserver
 headerObserver.observe(about);
 
 document.addEventListener("DOMContentLoaded", function() {
+    menuToggle.addEventListener("click", function () {
+        navList.classList.toggle("active");
+    });
+
     var buttons = document.querySelectorAll(".details-button");
 
     buttons.forEach(function(button) {
